@@ -1,0 +1,546 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANGAM K C - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">SANGAM K C</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hi, I'm <span>SANGAM K C</span></h1>
+      <p>Web Developer & Creative Technologist</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Sangam, a passionate developer focused on creating clean and user-friendly web experiences. I love bringing ideas to life in the browser.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>Short description of project one.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>Short description of project two.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SANGAM K C. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SANGAM K C | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        };
+    </script>
+    <!-- Font Awesome CDN -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+    <!-- Navbar -->
+    <!-- <nav class="flex justify-between items-center px-6 py-4 bg-gray-100 dark:bg-gray-800 shadow-md fixed top-0 w-full z-50">
+    <h1 class="text-2xl font-bold">SANGAM K C</h1>
+    <div>
+      <button onclick="toggleDarkMode()" class="bg-gray-200 dark:bg-gray-700 p-2 rounded">🌙</button>
+    </div>
+  </nav> -->
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Brand -->
+                <div class="flex-shrink-0 text-xl font-bold text-blue-600 dark:text-blue-400">
+                    SANGAM K C
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#home" class="hover:text-blue-500 transition">Home</a>
+                    <a href="#about" class="hover:text-blue-500 transition">About</a>
+                    <a href="#projects" class="hover:text-blue-500 transition">Projects</a>
+                    <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+                    <button onclick="toggleDarkMode()" class="bg-gray-200 dark:bg-gray-700 p-2 rounded">🌙</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-2xl focus:outline-none">☰</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white dark:bg-gray-900">
+            <a href="#home" class="block py-2 hover:text-blue-500">Home</a>
+            <a href="#about" class="block py-2 hover:text-blue-500">About</a>
+            <a href="#projects" class="block py-2 hover:text-blue-500">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+            <button onclick="toggleDarkMode()" class="mt-2 w-full text-left bg-gray-200 dark:bg-gray-700 p-2 rounded">🌙
+                Dark Mode</button>
+        </div>
+    </nav>
+
+
+    <main class="pt-20 max-w-5xl mx-auto px-6">
+
+        <!-- Hero -->
+        <!-- <section class="text-center py-20">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Sangam K C</h2>
+      <p class="text-xl text-gray-600 dark:text-gray-400">Web Developer | Designer | Dreamer</p>
+    </section> -->
+        <!-- Home Section -->
+        <section id="home"
+            class="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-100 to-white dark:from-gray-900 dark:to-gray-800 px-6">
+            <div class="text-center max-w-2xl">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
+                    Hi, I'm <span class="text-blue-600 dark:text-blue-400">Sangam K C</span><br />
+                    A Web Developer
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
+                    I build responsive and visually engaging websites with clean, efficient code. Passionate about
+                    frontend technologies and great design.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects"
+                        class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition">
+                        View Projects
+                    </a>
+                    <a href="#contact"
+                        class="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <!-- <section id="about" class="py-16">
+      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+      <p class="text-lg leading-7">
+        I'm a passionate front-end developer with experience in building modern, responsive websites using HTML, CSS, Tailwind, and JavaScript.
+      </p>
+    </section> -->
+       <!-- About Section without Image -->
+<section id="about" class="relative py-28 bg-gray-50 dark:bg-gray-900 px-6">
+  <div class="max-w-4xl mx-auto space-y-16 text-gray-800 dark:text-gray-300">
+
+    <h2 class="text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white text-center">
+      About Me
+    </h2>
+    <img src="img.jpg" alt="">
+
+    <div class="space-y-8 text-lg leading-relaxed">
+      <p>
+        I’m <strong class="text-blue-600 dark:text-blue-400">Sangam K C</strong>, a passionate frontend developer focused on building modern, scalable, and user-centric web experiences. My expertise lies in crafting clean and efficient code with an eye for design aesthetics and usability.
+      </p>
+
+      <p>
+        Over the years, I’ve honed my skills in <span class="font-semibold text-blue-600 dark:text-blue-400">HTML5</span>, <span class="font-semibold text-blue-600 dark:text-blue-400">Tailwind CSS</span>, and <span class="font-semibold text-blue-600 dark:text-blue-400">JavaScript</span> while embracing best practices in accessibility, responsiveness, and SEO optimization.
+      </p>
+
+      <div>
+        <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">What I Do Best</h3>
+        <ul class="grid grid-cols-2 gap-x-8 gap-y-5 list-none max-w-md mx-auto">
+          <li class="flex items-center space-x-3 text-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Responsive Web Design</span>
+          </li>
+          <li class="flex items-center space-x-3 text-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Clean, Semantic Code</span>
+          </li>
+          <li class="flex items-center space-x-3 text-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Performance Optimization</span>
+          </li>
+          <li class="flex items-center space-x-3 text-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Cross-browser Compatibility</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Experience & Education Cards -->
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Experience Card -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+          <h4 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Experience</h4>
+          <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>Frontend Developer Intern</strong> — <span class="italic text-sm text-gray-500 dark:text-gray-400">ABC Tech Solutions | Jan 2023 – Present</span>
+              <p class="mt-1 text-sm">
+                Building reusable UI components with Tailwind CSS and JavaScript, collaborating with design and backend teams to enhance user experience.
+              </p>
+            </li>
+            <li>
+              <strong>Freelance Web Developer</strong> — <span class="italic text-sm text-gray-500 dark:text-gray-400">Self-employed | 2021 – Present</span>
+              <p class="mt-1 text-sm">
+                Delivering custom, performant websites tailored to client needs with a focus on accessibility and responsiveness.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education Card -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+          <h4 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Education</h4>
+          <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>Bachelor's in Computer Science</strong> — <span class="italic text-sm text-gray-500 dark:text-gray-400">Tribhuvan University | 2018 – 2022</span>
+              <p class="mt-1 text-sm">
+                Graduated with distinction, focused on software engineering and web development.
+              </p>
+            </li>
+            <li>
+              <strong>Certified Web Developer</strong> — <span class="italic text-sm text-gray-500 dark:text-gray-400">FreeCodeCamp | 2022</span>
+              <p class="mt-1 text-sm">
+                Completed full-stack frontend curriculum including JavaScript, React, and responsive design.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fun Fact Box -->
+      <div class="mt-10 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-xl p-6 shadow-lg border border-blue-300 dark:border-blue-700 max-w-4xl mx-auto">
+        <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-300 flex items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20h.01" />
+          </svg>
+          Fun Fact
+        </h3>
+        <p class="text-blue-900 dark:text-blue-200">
+          Outside of coding, I love sketching, immersing myself in Studio Ghibli soundtracks, and exploring creative design inspiration on Dribbble.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Projects -->
+        <!-- <section id="projects" class="py-16">
+      <h3 class="text-3xl font-semibold mb-10">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition-transform p-6">
+          <h4 class="text-xl font-bold mb-2">Project One</h4>
+          <p>A responsive website built with Tailwind and JS.</p>
+        </div>
+        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition-transform p-6">
+          <h4 class="text-xl font-bold mb-2">Project Two</h4>
+          <p>Portfolio template with animations and interactivity.</p>
+        </div>
+      </div>
+    </section> -->
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-gray-50 dark:bg-gray-950 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">Projects</h2>
+
+                <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Project Card 1 -->
+                    <div
+                        class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="img/crr7.jpeg" alt="Project 1" class="w-full h-96 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Personal Portfolio
+                                Website</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                A responsive personal portfolio built with HTML, Tailwind CSS, and JavaScript. It
+                                showcases my projects, resume, and contact form in a clean layout.
+                            </p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Tech Used: HTML, Tailwind CSS,
+                                JavaScript</p>
+                            <div class="flex space-x-3">
+                                <a href="calculator.html" target="_blank"
+                                    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">Live
+                                    Demo</a>
+                                <a href="#" target="_blank"
+                                    class="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-600 text-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div
+                        class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="crr7.jpeg" alt="Project 2" class="w-full h-96 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Task Manager App</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                A lightweight to-do list app with task persistence using localStorage. Add, complete,
+                                and delete tasks with smooth UI interactions.
+                            </p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Tech Used: JavaScript, Tailwind CSS
+                            </p>
+                            <div class="flex space-x-3">
+                                <a href="#" target="_blank"
+                                    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">Live
+                                    Demo</a>
+                                <a href="#" target="_blank"
+                                    class="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-600 text-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div
+                        class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="cr7.jpeg" alt="Project 3" class="w-full h-96 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Product Landing Page
+                            </h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                A modern landing page for a fictional tech product. Fully responsive, mobile-first
+                                layout with CTA, pricing section, and feature highlights.
+                            </p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Tech Used: HTML, Tailwind CSS,
+                                JavaScript</p>
+                            <div class="flex space-x-3">
+                                <a href="#" target="_blank"
+                                    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">Live
+                                    Demo</a>
+                                <a href="#" target="_blank"
+                                    class="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-600 text-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more cards below as needed -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <!-- <section id="contact" class="py-16">
+      <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+      <form class="grid gap-4 max-w-xl">
+        <input type="text" placeholder="Your Name" class="p-3 rounded bg-gray-100 dark:bg-gray-700 outline-none" required />
+        <input type="email" placeholder="Your Email" class="p-3 rounded bg-gray-100 dark:bg-gray-700 outline-none" required />
+        <textarea placeholder="Your Message" rows="4" class="p-3 rounded bg-gray-100 dark:bg-gray-700 outline-none" required></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded">Send</button>
+      </form>
+    </section> -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-white dark:bg-gray-900 px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">Get In Touch</h2>
+
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <!-- Contact Form -->
+                    <div>
+                        <form class="grid gap-4">
+                            <input type="text" placeholder="Your Name" required
+                                class="p-4 rounded-lg bg-gray-100 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 transition" />
+                            <input type="email" placeholder="Your Email" required
+                                class="p-4 rounded-lg bg-gray-100 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 transition" />
+                            <textarea placeholder="Your Message" rows="5" required
+                                class="p-4 rounded-lg bg-gray-100 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+                            <button type="submit"
+                                class="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition">Send
+                                Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="text-gray-700 dark:text-gray-300 space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
+                            <p><a href="mailto:sangamkhatri32@gmail.com"
+                                    class="hover:text-blue-500">sangamkhatri32@gmail.com</a></p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Phone</h3>
+                            <p><a href="tel:+9779847673412" class="hover:text-blue-500">+977 9847673412</a></p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Location</h3>
+                            <p>DANG, Lumbini Province, Nepal</p>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Connect with Me</h3>
+                            <div class="flex space-x-4 text-2xl">
+                                <a href="https://linkedin.com/in/yourprofile" target="_blank"
+                                    class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/yourusername" target="_blank"
+                                    class="hover:text-gray-900 dark:hover:text-white"><i class="fab fa-github"></i></a>
+                                <a href="mailto:sangamkc@example.com" class="hover:text-red-500"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Optional: Map or Embed -->
+                <div class="mt-16 w-full h-64">
+                    <!-- <iframe src="https://maps.google.com/maps?q=Kathmandu,%20Nepal&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-full rounded-lg shadow"></iframe>
+     -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3518.425428933073!2d82.2743184!3d28.1335344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3997f501a5da2507%3A0x669b3e287457a3d3!2sSangam%20k%20c%20House!5e0!3m2!1sen!2snp!4v1751222021549!5m2!1sen!2snp"
+                        class="w-full h-full rounded-lg shadow allowfullscreen=" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">
+        &copy; 2025 Sangam K C. All rights reserved.
+    </footer> -->
+
+    <!-- Footer -->
+    <!-- <footer class="bg-gray-100 dark:bg-gray-900 py-8 mt-20">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6"> -->
+
+    <!-- Left: Name & Copyright -->
+    <!-- <div class="text-gray-600 dark:text-gray-400 text-sm text-center md:text-left">
+                &copy; 2025 <span class="font-semibold text-gray-800 dark:text-white">Sangam K C</span>. All rights
+                reserved.
+            </div> -->
+
+    <!-- Right: Social Media -->
+    <!-- <div class="flex space-x-5 text-xl">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"
+                    class="text-gray-700 dark:text-gray-300 hover:text-blue-600">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"
+                    class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:sangamkc@example.com" aria-label="Email"
+                    class="text-gray-700 dark:text-gray-300 hover:text-red-500">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer> -->
+
+    <footer class="bg-gray-100 dark:bg-gray-900 py-12 mt-20 border-t border-gray-300 dark:border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- About / Brand -->
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Sangam K C</h2>
+                <p class="text-gray-700 dark:text-gray-300 max-w-sm">
+                    Frontend developer crafting modern and responsive websites. Passionate about code, design, and
+                    creating user-friendly digital experiences.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">&copy; 2025 Sangam K C. All rights reserved.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
+                <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                    <li><a href="#home" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</a>
+                    </li>
+                    <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Contact Me</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-3">
+                    Email: <a href="mailto:sangamkhatri32@gmail.com"
+                        class="hover:text-blue-600 dark:hover:text-blue-400">sangamkhatri32@gmail.com</a>
+                </p>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">
+                    Phone: <a href="tel:+9779847673412" class="hover:text-blue-600 dark:hover:text-blue-400">+977
+                        9847673412</a>
+                </p>
+
+                <div class="flex space-x-6 text-2xl text-gray-700 dark:text-gray-300">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" title="LinkedIn"
+                        class="hover:text-blue-600 dark:hover:text-blue-400 transition">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub" title="GitHub"
+                        class="hover:text-gray-900 dark:hover:text-white transition">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:sangamkhatri32@gmail.com" aria-label="Email" title="Email"
+                        class="hover:text-red-500 transition">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</body>
+
+</html>
